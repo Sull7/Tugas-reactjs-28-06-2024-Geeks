@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 
+// Memunculkan waktu
 class Clock extends Component {
   constructor(props) {
     super(props);

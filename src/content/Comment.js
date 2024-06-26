@@ -18,14 +18,14 @@ class CommentExample extends Component {
           avatar: faker.image.avatar(),
           name: "Erik",
           date: faker.date.recent().toLocaleDateString(),
-          text: "Good Game",
+          text: faker.lorem.sentences(),
           likes: 0,
         },
         {
           avatar: faker.image.avatar(),
-          name: "Udin",
+          name: faker.person.firstName(),
           date: "Today at 12:30AM",
-          text: "Love Udin",
+          text: faker.music.genre(),
           likes: 0,
         },
       ],
@@ -51,13 +51,7 @@ class CommentExample extends Component {
           </Comment.Metadata>
           <Comment.Text>{comment.text}</Comment.Text>
           <Comment.Actions>
-            <button onClick={() => this.tombolClick(index)}>Click me</button>
-            <br />
-            <div
-              class="ui labeled button"
-              tabindex="0"
-              style={{ marginTop: "10px" }}
-            >
+            <div class="ui labeled button" tabindex="0">
               <div
                 class="ui red button"
                 onClick={() => this.tombolClick(index)}
