@@ -18,7 +18,7 @@ class FormInput extends Component {
 
   handleSubmit = () => {
     const { name, email, phone } = this.state;
-    alert(`Name: ${name}\nEmail: ${email}\nPhone: ${phone}`);
+    alert(`HALOO\nName: ${name}\nEmail: ${email}\nPhone: ${phone}`);
   };
 
   render() {
