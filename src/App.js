@@ -1,21 +1,22 @@
 import React, { Component } from "react";
-import { Container, Grid, GridColumn } from "semantic-ui-react";
+import { Container, Grid } from "semantic-ui-react";
 import "semantic-ui-css/semantic.min.css";
-import "./App.css";
+import "./assets/css/style.css";
 
 // Importan Conten
-import Nav from "./content/nav";
-import CommentExample from "./content/Comment";
-import Clock from "./content/clock";
-import FormInput from "./content/input";
-import UnsplashAPI from "./content/UnsplasApi";
-import YouTubeAPI from "./content/youtubeApi";
-
+import Nav from "./views/nav";
+import CommentExample from "./views/Comment";
+import Clock from "./views/clock";
+import FormInput from "./views/input";
+import UnsplashAPI from "./views/unsplash";
+import YouTubeAPI from "./views/YoutubeSearch";
+import NumberDisplay from "./views/number";
 class App extends Component {
   render() {
     return (
       <div className="App-background">
         <Nav />
+        <NumberDisplay />
         <Container className="container">
           <Grid columns={2} stackable>
             <Grid.Column>
@@ -31,7 +32,6 @@ class App extends Component {
           </div>
           <YouTubeAPI />
         </Container>
-        <div>Ceritanya INI FOOTER</div>
       </div>
     );
   }

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Form, Button } from "semantic-ui-react";
-import "../App.css"; // Import CSS file
+import "../assets/css/style.css"; // Import CSS file
 
 class FormInput extends Component {
   constructor(props) {

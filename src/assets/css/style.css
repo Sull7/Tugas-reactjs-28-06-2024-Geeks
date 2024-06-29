@@ -1,0 +1,84 @@
+/* ! Tampilan FormInput.css */
+.form-container {
+  display: flex;
+  justify-content: center; /* Memusatkan form secara horizontal */
+  align-items: center; /* Memusatkan form secara vertikal */
+  height: 100vh; /* Mengatur tinggi container agar 100% dari viewport height */
+}
+
+.form-container form {
+  width: 50%;
+}
+
+.form-container-u {
+  margin: 20px 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+
+.grid-item img:hover {
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+}
+
+/* ! Tampilan Youtube API */
+.youtube-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.video-item,
+.image-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.video-info {
+  margin-left: 10px;
+}
+
+.video-title {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.video-channel {
+  font-size: 12px;
+  color: gray;
+}
+
+.images-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.image-item {
+  margin: 10px;
+}
+
+.image-item img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+}

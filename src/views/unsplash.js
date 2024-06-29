@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import axios from "axios";
 import { Form, Input } from "semantic-ui-react";
 
-import "../App.css";
 class UnsplashAPI extends Component {
   constructor(props) {
     super(props);
